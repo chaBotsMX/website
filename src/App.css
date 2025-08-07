@@ -1,42 +1,94 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    background-color: #EFEFEF;
+    justify-content: center;
+    align-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.content-a {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.content-a img{
+    width: 50vw;
+}
+.content-b {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+}
+.content-b video {
+    width: 100vw;
+}
+.content-b-mask{
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: #32323230;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #EFEFEF;
+    font-size: 80px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.content-c {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.content-c h1{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #323232;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.inner-content-c-big{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.inner-content-c-big img{
+    width: 35vw;
+}
+.inner-content-c-small{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.inner-content-c-small img{
+    width: 10vw;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

@@ -1,34 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import myVideo from '/video.mp4';
+import chabotLogo   from '/chabotLogo.svg'
+import dojoLogo     from '/dojologo.svg'
+import crealityLogo from '/crealitylogo.png'
+import openmvLogo   from '/openmvlogo.png'
+import dfrobotLogo   from '/dfrobotlogo.png'
+import polymakerLogo   from '/polymakerlogo.png'
+import altiumLogo   from '/altiumlogo.png'
+import solidLogo   from '/solidworkslogo.png'
+import maxonLogo   from '/maxonlogo.png'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='wrapper'>
+        <div className='content-a'>
+            <img src={chabotLogo} alt="-[:]"/>
+        </div>
+        <div className='content-b'>
+            <video autoPlay muted loop playsInline>
+                <source src={myVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div className='content-b-mask'>
+            El combustible es la pasión
+        </div>
+        <div className='content-c'>
+            <h1> PATROCINADORES </h1>
+            <div className='inner-content-c-big'> 
+                <img src={dojoLogo} alt="Dojo Robot"/>
+                <img src={crealityLogo} alt="Creality"/>
+            </div>
+            <div className='inner-content-c-small'> 
+                <img src={openmvLogo} alt="OpenMV"/>
+                <img src={dfrobotLogo} alt="DFRobot"/>
+                <img src={polymakerLogo} alt="Polymaker"/>
+                <img src={maxonLogo} alt="Maxon"/>
+                <img src={solidLogo} alt="SolidWorks"/>
+                <img src={altiumLogo} alt="Altium"/>
+            </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
   )
 }
 
