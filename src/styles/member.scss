@@ -1,0 +1,45 @@
+.member-wrapper{
+    display: flex;
+    width: 50%;
+    height: 30vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    img{
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (min-width: $desktop) {
+  .member-wrapper{
+    width: 25%;
+    height: 50vh;
+  }
+}
+
+.member-name{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(0.6rem, 1.25vw, 2rem);
+}
+.member-content{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member-inner{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(0.6rem, 1.25vw, 2rem);
+}

@@ -1,0 +1,22 @@
+.sponsors-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.sponsors-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80vh;
+    background-color: transparent;
+    border: solid 1px $secondary;
+    img {
+        width: 65%;
+        height: auto;
+    }
+}

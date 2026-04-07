@@ -1,0 +1,35 @@
+.flag-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.flag-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+    img {
+        width: 80%;
+        height: auto;
+        margin: 5vh 0;
+    }
+    h1 {
+        display: flex;
+        width: 80%;
+        height: auto;
+        text-align: justify;
+        font-size: clamp(0.5rem, 1.2vw, 2rem);
+        font-weight: normal;
+        justify-content: center;
+        align-items: center;
+    }
+}

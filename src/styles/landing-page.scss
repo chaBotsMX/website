@@ -1,0 +1,29 @@
+.landing-page-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 94vh;
+  img{
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .landing-page-logo-wrapper{
+    img{
+      width: 10%;
+    }
+  }
+}
+
+.members-wrapper {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 5% 3%;
+  justify-content: flex-start;
+  align-content: flex-start;
+}

@@ -1,0 +1,70 @@
+.back-btn {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    font-size: clamp(2rem, 2vw, 4rem);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid $secondary;
+    background-color: $primary;
+    margin-bottom: 10vh;
+    &:hover {
+        border: 2px solid $secondary;
+    }
+}
+.blog-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 3vh 5%;
+    padding-bottom: 10vh;
+}
+
+.blog-title{
+    display: flex;
+    width: 70%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+    color: $secondary;
+    margin: 1vh 0;
+    font-size: clamp(1.5rem, 4vw, 6rem);
+    font-weight: bold;
+}
+.blog-meta{
+    display: flex;
+    width: 70%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+    color: $tertiary;
+    margin: 1vh 0;
+    font-size: clamp(1rem, 1.5vw, 3rem);
+}
+.blog-content{
+    width: 70%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3vh 3%;
+    img {
+        width: 90%;
+        height: auto;
+        margin: 3vh 0;
+    }
+}
+
+@media (min-width: $desktop) {
+  .blog-content{
+    img {
+        width: 40%; 
+    }
+  }
+}
