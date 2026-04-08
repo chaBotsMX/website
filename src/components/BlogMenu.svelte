@@ -8,7 +8,7 @@
     let { onchabotclick, oncontentclick } = $props();
     let pb: PocketBase;
     onMount(async () => {
-        pb = new PocketBase('http://127.0.0.1:8090');
+        pb = new PocketBase('https://db.chabots.mx');
         blogs = await pb.collection('blogs').getFullList();
     });
     function getImage(object:any) {

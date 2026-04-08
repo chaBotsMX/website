@@ -8,7 +8,7 @@
     import { onMount } from 'svelte';
     let achievements: any[] = [];
     onMount(async () => {
-        const pb = new PocketBase('http://127.0.0.1:8090');
+        const pb = new PocketBase('https://db.chabots.mx');
         const comp = await pb.collection('competitions').getFirstListItem(
             `title = "${title}"`,
         );

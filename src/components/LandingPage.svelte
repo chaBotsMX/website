@@ -25,7 +25,7 @@
 
     let pb: PocketBase;
     onMount(async () => {
-        pb = new PocketBase('http://127.0.0.1:8090');
+        pb = new PocketBase('https://db.chabots.mx');
         projects = await pb.collection('projects').getFullList();
         members = await pb.collection('members').getFullList();
         competitions = await pb.collection('competitions').getFullList();

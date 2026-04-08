@@ -8,7 +8,7 @@
     let pb: PocketBase;
     let records: any[] | null = $state(null);
     onMount(async () => {
-        pb = new PocketBase('http://127.0.0.1:8090');
+        pb = new PocketBase('https://db.chabots.mx');
         records = await pb.collection('entries').getFullList({
             filter: `blog = "${blog.id}"`
         });
